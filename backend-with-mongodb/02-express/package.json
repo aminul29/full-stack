@@ -1,0 +1,31 @@
+{
+    "name": "express-practice",
+    "version": "1.0.0",
+    "description": "Express js practice ",
+    "keywords": [
+        "express",
+        "mdaminul",
+        "mhdaminul"
+    ],
+    "homepage": "https://github.com/aminul29/full-stack#readme",
+    "bugs": {
+        "url": "https://github.com/aminul29/full-stack/issues"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/aminul29/full-stack.git"
+    },
+    "license": "ISC",
+    "author": "Md Aminul",
+    "type": "module",
+    "main": "index.js",
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "express": "^5.1.0"
+    },
+    "devDependencies": {
+        "nodemon": "^3.1.10"
+    }
+}
