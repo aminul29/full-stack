@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tailwind Css</title>
+    <link rel="stylesheet" href="./output.css">
+
+    
+</head>
+<body class="bg-gray-800 text-white text-center">
+    <h1>JavaScript DOM Fun Examples</h1>
+
+    <section id="example-1" class="my-10">
+        <h2>Accessing DOM Elements</h2>
+        <p id="example-1-paragraph">This is a paragraph. Click the button to change the text.</p>
+        <a href="#" id="button" class="inline-block bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 text-uppercase">Click Me</a>
+    </section>
+
+    <!-- // a section with tea list -->
+    <section id="tea-section" class="my-10">
+        <h2>Tea List</h2>
+        <ul id="tea-list">
+            <li class="tea-item">Green Tea</li>
+            <li class="tea-item">Black Tea</li>
+            <li class="tea-item">Earl Grey</li>
+        </ul>
+    </section>
+
+    <section id="example-8" class="my-10 max-w-sm mx-auto flex flex-col items-center ">
+        <h2 class="mb-4 text-2xl font-bold">Form Handling</h2></h2>
+        <form action="" id="feedbackForm" class="">
+            <label for="feedbackInput" class="block mb-2">Your Feedback</label>
+            <input type="text" id="feedbackInput" class="block mb-4 border border-gray-300" name="feedbackInput" required>
+            <button type="submit" class="bg-sky-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded">Submit Feedback</button>
+        </form>
+        <p id="feedbackvalue"></p>
+    </section>
+
+    <section>
+        <p id="domstatus"></p>
+    </section>
+
+    <section id="example-10">
+        <h2>CSS Manupulation</h2>
+        <p id="descriptionText">This text will change color</p>
+        <button id="toggleHighlight" class="bg-sky-500 py-2 rounded px-4 cursor-pointer">Toggle Highlight</button>
+    </section>
+
+    <script src="./main.js"></script>
+</body>
+</html>
