@@ -8,10 +8,17 @@
     // 03 define a port
     const port = 3000;
 
-    // 04 define a route, when a request is made to the root path the callback function is executed
-    app.get("/", (req, res) => {
-        res.send("Hello World From Express Server slash route");
-    });
+    // 05 use the express.json middleware to parse incoming requests with JSON payloads. 
+    // convert the request body to a JavaScript object
+    app.use(express.json());
+    
+    // 06 create an array to store the users and an id counter
+    let users = [];
+    let id = 1;
+
+    app.post('/teas', (req, res) => {
+        req.body.price = Number(req.body.price);
+    })
 
     // 04 start the server and listen to the port
     app.listen(port, () =>{
