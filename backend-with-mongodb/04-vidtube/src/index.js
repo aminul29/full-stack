@@ -12,7 +12,7 @@
         path: "./.env"
     });
 
-    // const PORT = 7000; // 05 define the port
+    // const PORT = 8000; // 05 define the port
     const PORT = process.env.PORT || 8001; // 08 create and get the port from the .env file
     // 8.1 now we can run "npm run dev" on the console and we should see the message
     // app.listen(PORT, () => {
