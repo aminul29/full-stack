@@ -29,3 +29,10 @@
     export { app };
 
     // 04 in src/index.js import the app
+
+
+    // import routes
+    import healthcheckRouter from "./routes/healthcheck.routes.js";
+
+    // use middleware to use the routes
+    app.use("/api/v1/healthcheck", healthcheckRouter);
