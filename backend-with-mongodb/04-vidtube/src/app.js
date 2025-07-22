@@ -27,3 +27,5 @@
 
     // 03 Export the app
     export { app };
+
+    // 04 in src/index.js import the app
