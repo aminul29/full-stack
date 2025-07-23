@@ -5,6 +5,8 @@
     // 10 import cors
     import cors from "cors";
 
+    import cookieParser from "cookie-parser";
+
     // 02 create an express app
     const app = express();
 
@@ -21,6 +23,9 @@
     // 13 set the limit of the request body for security. common middleware
     app.use(express.json({limit: "16kb"}));
     app.use(express.urlencoded({extended: true, limit: "16kb"}));
+
+    // use the cookie-parser middleware
+    app.use(cookieParser());
 
     // 13 create a constant for the database name in src/constant.js
     // 14 import mongoose in db/index.js
